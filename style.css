@@ -432,3 +432,176 @@ html{
   height:70px;
   margin-bottom:20px;
 }
+/* ============================= */
+/* GLOBAL RESPONSIVE FIX */
+/* ============================= */
+
+/* Images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+/* ============================= */
+/* TABLET VIEW (≤ 1024px) */
+/* ============================= */
+@media (max-width: 1024px) {
+
+  .hero {
+    padding: 70px 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .nav-container {
+    padding: 16px 18px;
+  }
+
+  nav a {
+    margin-left: 14px;
+    font-size: 0.85rem;
+  }
+
+  .program-grid,
+  .why-grid,
+  .benefits-grid,
+  .goals-grid,
+  .certified-grid,
+  .docs-grid {
+    gap: 20px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================= */
+/* MOBILE VIEW (≤ 768px) */
+/* ============================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .nav-container {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 6px 10px;
+    font-size: 0.85rem;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-logo {
+    height: 60px;
+    margin: 0 auto 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .hero-list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  /* BUTTON */
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+  }
+
+  /* SECTIONS */
+  .section {
+    padding: 60px 0;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .section-desc {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  /* CARDS FULL WIDTH */
+  .program-card,
+  .why-card,
+  .benefit-card,
+  .goal-card,
+  .certified-card,
+  .doc-card,
+  .contact-card {
+    width: 100%;
+  }
+
+  /* MAP */
+  .map-box {
+    min-height: 220px;
+  }
+
+  /* FOOTER */
+  .footer {
+    font-size: 0.85rem;
+  }
+}
+
+/* ============================= */
+/* SMALL MOBILE (≤ 480px) */
+/* ============================= */
+@media (max-width: 480px) {
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-logo {
+    height: 55px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+}
+
+
