@@ -645,11 +645,8 @@ nav a {
     font-size: 1.2rem;
   }
 }
-/* Ensure animations run on all devices */
-.slide-left,
-.slide-right {
-  will-change: transform, opacity;
-}
+
+
 
 
 
