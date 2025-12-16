@@ -35,4 +35,22 @@ counters.forEach(counter => {
   });
 
   counterObserver.observe(counter);
+
+});
+// SCROLL ANIMATION – WORKS ON MOBILE, TABLET, DESKTOP
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  },
+  {
+    threshold: 0.15, // VERY IMPORTANT for mobile
+  }
+);
+
+document.querySelectorAll(".slide-left, .slide-right").forEach((el) => {
+  observer.observe(el);
 });
