@@ -603,5 +603,48 @@ body {
     padding: 50px 0;
   }
 }
+/* ============================= */
+/* SAME NAVBAR FOR ALL DEVICES */
+/* ============================= */
+
+/* Keep navbar always horizontal */
+.nav-container {
+  flex-direction: row;
+}
+
+/* Nav stays in one line */
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+}
+
+nav::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+/* Nav links spacing */
+nav a {
+  white-space: nowrap;
+}
+
+/* Reduce padding & font slightly on small screens */
+@media (max-width: 768px) {
+
+  .nav-container {
+    padding: 14px 16px;
+  }
+
+  nav a {
+    margin-left: 14px;
+    font-size: 0.85rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+}
+
 
 
